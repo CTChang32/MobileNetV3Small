@@ -20,7 +20,7 @@ def build_dataset(
     val_path: str,
     interpolation: str="bilinear",
     size: int=160
-    )-> tf.dataset:
+    ):
 
     train_ds = tf.keras.utils.image_dataset_from_directory(
         train_path,
